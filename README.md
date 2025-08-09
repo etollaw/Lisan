@@ -1,50 +1,154 @@
-# Welcome to your Expo app 👋
+# Lisan - Amharic Language Learning App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern Duolingo-style language learning app for Amharic, built with React Native and Expo.
 
-## Get started
+## � Features
 
-1. Install dependencies
+- **Interactive Lessons**: Learn Amharic through engaging exercises
+- **Audio Pronunciation**: Native Amharic audio for all words and phrases
+- **Progressive Learning**: Structured lessons from basic to advanced
+- **User Progress Tracking**: Track your learning journey with Firebase
+- **Multiple Exercise Types**: Listening, multiple choice, and more
+- **Real Audio Collection**: Extensive Amharic audio library with 21+ categories
 
-   ```bash
-   npm install
-   ```
+## 📱 Categories
 
-2. Start the app
+- **Greetings**: Basic greetings and polite expressions
+- **Numbers**: Numbers 1-10 and beyond
+- **Colors**: Basic colors in Amharic
+- **Animals**: Various animals and their names
+- **Food & Drinks**: Common foods and beverages
+- **Body Parts**: Human body parts
+- **Nature**: Natural elements and phenomena
+- **Occupations**: Jobs and professions
+- **Time**: Days, months, time expressions
+- **Family Relationships**: Family member terms
+- **Feelings**: Emotions and feelings
+- **And much more...**
 
-   ```bash
-    npx expo start
-   ```
+## 🎵 Audio Integration
 
-In the output, you'll find options to open the app in a
+The app includes an extensive collection of native Amharic audio files:
+- Over 21 audio categories
+- Hundreds of pronunciation examples
+- High-quality MP3 recordings
+- Organized by topic and difficulty
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **React Native** with Expo
+- **TypeScript** for type safety
+- **Firebase** for authentication and data storage
+- **expo-av** for audio playback
+- **expo-router** for navigation
+- **Tailwind CSS** for styling
 
-## Get a fresh project
+## 📂 Project Structure
 
-When you're ready, run:
+```
+app/
+├── components/         # Reusable UI components
+├── lesson/            # Lesson screens
+├── models/            # TypeScript type definitions
+├── services/          # Business logic and API services
+└── styles/            # Styling files
 
-```bash
-npm run reset-project
+assets/
+└── audio/
+    └── Lisan Audio File/    # Extensive Amharic audio collection
+        ├── greeting_audio_files/
+        ├── amharic_numbers_audio/
+        ├── colors_audio/
+        ├── amharic_animals_audio/
+        └── ... (21+ categories)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚀 Getting Started
 
-## Learn more
+### Prerequisites
 
-To learn more about developing your project with Expo, look at the following resources:
+- Node.js (v14 or higher)
+- npm or yarn
+- Expo CLI
+- Firebase account
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Installation
 
-## Join the community
+1. Clone the repository:
+```bash
+git clone https://github.com/[your-username]/Lisan.git
+cd Lisan
+```
 
-Join our community of developers creating universal apps.
+2. Install dependencies:
+```bash
+npm install
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3. Set up Firebase:
+   - Create a Firebase project
+   - Add your Firebase configuration to `app/firebaseConfig.ts`
+   - Enable Authentication and Firestore
+
+4. Start the development server:
+```bash
+npm start
+```
+
+5. Run on your device:
+   - Install Expo Go app on your phone
+   - Scan the QR code from the terminal
+
+## 🎯 Current Features
+
+### ✅ Completed
+- User authentication with Firebase
+- Lesson navigation system
+- Audio service integration
+- Progress tracking
+- Interactive exercises
+- Responsive UI design
+
+### 🔄 In Progress
+- Audio playback optimization
+- Additional lesson content
+- Advanced exercise types
+
+### 📋 Planned
+- Offline mode
+- Voice recognition
+- Social features
+- Achievement system
+- Mobile app store deployment
+
+## 🎨 UI/UX
+
+The app features a modern, intuitive design inspired by popular language learning apps:
+- Clean, minimalist interface
+- Progress indicators
+- Interactive buttons and feedback
+- Responsive design for all screen sizes
+
+## 🔊 Audio System
+
+The audio system is built around a comprehensive mapping system:
+- Category-based organization
+- On-demand loading
+- Error handling and fallbacks
+- Debug logging for troubleshooting
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 📞 Contact
+
+For questions or support, please open an issue on GitHub.
+
+---
+
+**Lisan** - Making Amharic language learning accessible and enjoyable! 🇪🇹
